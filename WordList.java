@@ -2,6 +2,7 @@ public class WordList
 {
     WordMeaningNode head;
     
+    //initializing list
     WordList()
     {
         head = null;
@@ -9,14 +10,14 @@ public class WordList
     
     public void add(WordMeaning s)
     {   
-        WordMeaningNode temp = new WordMeaningNode(s);
+        WordMeaningNode temp = new WordMeaningNode(s); //assigns node to user input
         
         if(isEmpty())
-            head = temp;
+            head = temp; //adding node to head of list if list is empty
         else
         {
-            WordMeaningNode back = null;
-            WordMeaningNode current = head;
+            WordMeaningNode back = null; //initialing pointer to trail
+            WordMeaningNode current = head; //pointer to traverse the list
             boolean found = false;
             
             while(current != null && !found)
@@ -25,8 +26,8 @@ public class WordList
                     found = true;
                 else
                 {
-                    back = current;
-                    current = current.next;
+                    back = current; //tail pointer assigned to traversing pointer
+                    current = current.next; //travering pointer continues to traverse
                 }
             }
             
