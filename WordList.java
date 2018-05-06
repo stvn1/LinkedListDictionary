@@ -22,7 +22,7 @@ public class WordList
             
             while(current != null && !found)
             {
-                if(temp.data.getWord().compareTo(current.data.getWord()) <= 0)
+                if(temp.data.getWord().compareTo(current.data.getWord()) <= 0)//searches list to see if word already exists
                     found = true;
                 else
                 {
@@ -40,7 +40,7 @@ public class WordList
         }
     }
     
-    
+    //method removes word entered by user
     public boolean remove(String s)
     {
         if(isEmpty()) 
@@ -50,6 +50,7 @@ public class WordList
             WordMeaningNode current = head;
             WordMeaningNode back = null;
             
+            //finds word and reassigns node to "delete" from list
             while (current != null)
             {
                 if (current.data.getWord().equals(s)) 
@@ -71,12 +72,14 @@ public class WordList
         }          
     }
     
+    //returns list
     @Override
     public String toString()
     {
         String result = "";
         WordMeaningNode current = head;
         
+        //loops through list and prints all values
         while(current != null)
         {
             result += current.data.getWord() + current.data.getMeaning() + "\n";
