@@ -13,6 +13,7 @@ public class Dictionary
         //Retrieving the input from the user
         while(!done)
         {
+            //user interface
             int menu = GetData.getInt("\tDictionary\n"+"\t"+ 
                     "\n\nPlease choose from the following:"+
                     "\n1. Add New Word\n2. Delete a Word\n"
