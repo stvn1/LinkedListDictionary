@@ -10,7 +10,7 @@ public class Dictionary
         WordList deleted = new WordList(); //list to store deleted words from dictionary
         boolean done = false;
         
-        //Retrieving the input from the user
+        //Retrieving the input from user
         while(!done)
         {
             //user interface
