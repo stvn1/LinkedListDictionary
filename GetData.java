@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-//gets data from the user
+//gets data from user
 public class GetData
 {   
     public static int getInt(String s)
