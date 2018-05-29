@@ -7,7 +7,7 @@ public class Dictionary
     public static void main(String args[])
     {   
         WordList list = new WordList(); //list to store dictionary
-        WordList deleted = new WordList(); //list to store deleted words from dictionary
+        WordList deleted = new WordList(); //list to store deleted words from the dictionary
         boolean done = false;
         
         //Retrieving the input from user
